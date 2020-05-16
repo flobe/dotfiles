@@ -14,6 +14,7 @@ set shortmess+=I
 set nowrap
 set number
 set cursorline
+set ruler
 
 "Disable bell on error
 set noerrorbells visualbell t_vb=
