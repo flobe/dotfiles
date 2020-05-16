@@ -11,7 +11,6 @@ set noswapfile
 " Don't show welcome message on start
 set shortmess+=I
 
-
 set nowrap
 set number
 set cursorline
@@ -20,3 +19,6 @@ set cursorline
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
 
+" Searching
+set incsearch
+set hlsearch
