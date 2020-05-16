@@ -101,3 +101,9 @@ source $ZSH/oh-my-zsh.sh
 alias cls="clear&&ls"
 alias icat="kitty +kitten icat"
 
+
+alias ls=' exa --group-directories-first'
+alias la=' ls -a'
+alias ll=' ls --git -l'
+alias lt=' ls --tree -D -L 2'
+alias ltt=' ls --tree'
