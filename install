@@ -3,12 +3,9 @@
 scriptFile=$(readlink -f "$0")
 scriptDir=$(dirname $scriptFile)
 
-function createHomeDir() {
-	mkdir -p ~/$1
-}
-
 function linkConfig() {
 	createHomeDir $(dirname $1)
+	mkdir -p ~/$1
 	ln -sf $scriptDir/$1 ~/$1
 }
 
