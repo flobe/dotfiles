@@ -2,16 +2,19 @@
     border: none;
     border-radius: 0;
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    /*font-family: Roboto, Helvetica, Arial, sans-serif;*/
+    font-family: JetBrainsMono;
+
+    font-size: 12px;
     min-height: 0;
 }
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: #282a36;
+    /*background-color: rgba(0, 0, 0, 0.85);*/
     /*background-color: rgba(43, 48, 59, 0.9);*/
     border-bottom: 1px solid rgba(100, 114, 125, 0.5);
-    color: #ffffff;
+    color: #f8f8f2;
     transition-property: background-color;
     transition-duration: .5s;
 }
