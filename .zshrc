@@ -108,3 +108,8 @@ alias ll=' ls --git -l'
 alias lla='ll -a'
 alias lt=' ls --tree -D -L 2'
 alias ltt=' ls --tree'
+
+#PATH Export
+path+=('/home/flob/scripts')
+
+export PATH
