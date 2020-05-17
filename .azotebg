@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+pkill swaybg
+swaybg -o* -i '/home/flob/nextcloud/Wallpaper/mohammad-alizade-4wzRuAb-KWs-unsplash.jpg' -m fill &
