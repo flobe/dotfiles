@@ -109,6 +109,8 @@ alias lla='ll -a'
 alias lt=' ls --tree -D -L 2'
 alias ltt=' ls --tree'
 
+alias cal='cal -mw'
+
 #PATH Export
 path+=('/home/flob/scripts')
 
