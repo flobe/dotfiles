@@ -4,22 +4,22 @@ scriptFile=$(readlink -f "$0")
 scriptDir=$(dirname $scriptFile)
 
 function createHomeDir() {
-	mkdir ~/$1 &> /dev/null
+	mkdir -p ~/$1
 }
 
 function linkConfig() {
-	ln -svf $scriptDir/$1 ~/$1
+	createHomeDir $(dirname $1)
+	ln -sf $scriptDir/$1 ~/$1
 }
 
-echo "====| Setting up Dotfile Repo |===="
-createHomeDir .config
-
-echo "* VIM Config"
 linkConfig .vimrc
-
-echo "* ZSH"
 linkConfig .zshrc
-
-echo "* Sway"
-createHomeDir .config/sway
+linkConfig .bashrc
+linkConfig .bash_profile
 linkConfig .config/sway/config
+linkConfig .config/kitty/dracula.conf
+linkConfig .config/kitty/kitty.conf
+linkConfig .config/alacritty/alacritty.yml
+linkConfig .config/swaylock/config
+linkConfig .config/waybar/config
+linkConfig .config/waybar/style.css
