@@ -1,6 +1,25 @@
 #!/bin/sh
 
+scriptFile=$(readlink -f "$0")
+scriptDir=$(dirname $scriptFile)
+
+function createHomeDir() {
+	mkdir ~/$1 &> /dev/null
+}
+
+function linkConfig() {
+	ln -svf $scriptDir/$1 ~/$1
+}
+
 echo "====| Setting up Dotfile Repo |===="
+createHomeDir .config
 
 echo "* VIM Config"
-ln -svf "$(pwd)/.vimrc" ~
+linkConfig .vimrc
+
+echo "* ZSH"
+linkConfig .zshrc
+
+echo "* Sway"
+createHomeDir .config/sway
+linkConfig .config/sway/config
