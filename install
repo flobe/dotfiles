@@ -4,8 +4,7 @@ scriptFile=$(readlink -f "$0")
 scriptDir=$(dirname $scriptFile)
 
 function linkConfig() {
-	createHomeDir $(dirname $1)
-	mkdir -p ~/$1
+	mkdir -p ~/$(dirname $1)
 	ln -sf $scriptDir/$1 ~/$1
 }
 
@@ -20,3 +19,4 @@ linkConfig .config/alacritty/alacritty.yml
 linkConfig .config/swaylock/config
 linkConfig .config/waybar/config
 linkConfig .config/waybar/style.css
+linkConfig .azotebg
