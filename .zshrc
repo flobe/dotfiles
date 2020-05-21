@@ -103,7 +103,7 @@ alias icat="kitty +kitten icat"
 
 
 alias ls=' exa --group-directories-first'
-alias lsa=' ls -a'
+alias la=' ls -a'
 alias ll=' ls --git -l'
 alias lla='ll -a'
 alias lt=' ls --tree -D -L 2'
