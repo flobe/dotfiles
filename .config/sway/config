@@ -75,14 +75,15 @@ output * bg /home/flob/nextcloud/Wallpaper/59dWg-Ip1lyrDdZockleRxy3V1KgqmtU69B4C
     # Start firefox private
     bindsym $mod+Shift+p exec firefox --private-window
 
-    # Start ranger
-    bindsym $mod+Shift+r exec kitty -e ranger
-
     # Start vim
     bindsym $mod+Shift+v exec kitty -e vim
 
+    # NOTES
+    # Menu of existing:
+    bindsym $mod+Shift+n exec kitty -e vim $(echo ~/nextcloud/Notes/$(exa -rs modified ~/nextcloud/Notes | dmenu -l 10))
+
     # Start nemo
-    bindsym $mod+Shift+n exec nemo
+    bindsym $mod+Shift+f exec nemo
 
     # Kill focused window
     bindsym $mod+Shift+q kill
