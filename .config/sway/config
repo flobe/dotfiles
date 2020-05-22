@@ -80,7 +80,7 @@ output * bg /home/flob/nextcloud/Wallpaper/59dWg-Ip1lyrDdZockleRxy3V1KgqmtU69B4C
 
     # NOTES
     # Menu of existing:
-    bindsym $mod+Shift+n exec kitty -e vim $(echo ~/nextcloud/Notes/$(exa -rs modified ~/nextcloud/Notes | dmenu -l 10))
+    bindsym $mod+Shift+n exec kitty -e vim "~/nextcloud/Notes/$(exa -rs modified ~/nextcloud/Notes | dmenu -l 10)"
 
     # Start nemo
     bindsym $mod+Shift+f exec nemo

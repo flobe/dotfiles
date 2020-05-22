@@ -111,6 +111,8 @@ alias ltt=' ls --tree'
 
 alias cal='cal -mw'
 
+alias unlockGithub='eval $(keychain --eval --quiet GitHub)'
+
 #PATH Export
 path+=('/home/flob/scripts')
 
