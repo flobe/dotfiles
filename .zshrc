@@ -109,6 +109,8 @@ alias lla='ll -a'
 alias lt=' ls --tree -D -L 2'
 alias ltt=' ls --tree'
 
+alias bt='bluetoothctl'
+
 alias cal='cal -mw'
 
 alias unlockGithub='eval $(keychain --eval --quiet GitHub)'
