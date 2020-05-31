@@ -115,6 +115,8 @@ alias cal='cal -mw'
 
 alias unlockGithub='eval $(keychain --eval --quiet GitHub)'
 
+alias cd='echo "dont use that..."'
+
 #PATH Export
 path+=('/home/flob/scripts')
 
