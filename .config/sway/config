@@ -73,7 +73,7 @@ output * bg /home/flob/nextcloud/Wallpaper/59dWg-Ip1lyrDdZockleRxy3V1KgqmtU69B4C
     bindsym $mod+Shift+Return exec firefox
 
     # Start keepassXC
-    bindsym $mod+Shift+p workspace 10;exec keepassxc 
+    bindsym $mod+Shift+p workspace 11;exec keepassxc 
 
     # NOTES
     # Menu of existing:
