@@ -26,7 +26,7 @@ set $menu dmenu_path | dmenu -i -l 10 -nb "#282a36" -nf "#f8f8f2" -sf "#44475a" 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/flob/nextcloud/Wallpaper/59dWg-Ip1lyrDdZockleRxy3V1KgqmtU69B4CPGjix8.jpg fill
+output * bg /home/flob/nextcloud/Wallpaper/anders-jilden-uwbajDCODj4-unsplash.jpg fill
 #
 # Example configuration:
 #
