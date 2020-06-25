@@ -121,6 +121,8 @@ alias unlockGithub='eval $(keychain --eval --quiet GitHub)'
 alias cd='echo "dont use that..."'
 alias du='du -hd 1'
 alias pacman='sudo pacman'
-alias gitlog='git log --oneline --remotes'
-alias gitlogd='git log --stat --graph --remotes'
+alias gitlog='git log --oneline '
+alias gitlogd='git log --stat --graph'
 alias status="git status"
+
+alias aliases="grep alias ~/.zshrc"
