@@ -80,8 +80,7 @@ output * bg /home/flob/nextcloud/Wallpaper/anders-jilden-uwbajDCODj4-unsplash.jp
 
     # NOTES
     # Menu of existing:
-    bindsym $mod+Shift+n exec kitty -e vim "~/nextcloud/Notes/$(exa -rs modified ~/nextcloud/Notes | dmenu -l 10)"
-
+    bindsym $mod+Shift+n exec swaymsg exec "kitty -e opennote" && sleep 0.4 && swaymsg floating enable
     # Start nemo
     bindsym $mod+Shift+f exec nemo
 
