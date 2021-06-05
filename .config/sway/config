@@ -238,12 +238,14 @@ bar {
 #    }
 }
 
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 1 
 #for_window [window_role=__focused__] border pixel 1
-gaps inner 5
-gaps outer 5
-smart_gaps on
-default_border pixel 2 
+#gaps inner 5
+gaps inner 0
+#gaps outer 5
+gaps outer 0
+smart_gaps off
+default_border pixel 1
 
 ## DistroTube:
 ## Theme colors

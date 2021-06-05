@@ -53,3 +53,6 @@ endif
 
 " Key bindings
 map <C-n> :NERDTreeToggle<CR>
+
+" Omnisharp
+filetype indent plugin on
