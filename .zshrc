@@ -92,6 +92,7 @@ source $ZSH/oh-my-zsh.sh
 
 #Environment Variables
 path+=('/home/flob/scripts')
+path+=('/home/flob/.dotnet/tools')
 export PATH
 
 export QT_STYLE_OVERRIDE="adwaita-dark"
@@ -124,3 +125,12 @@ alias gitlogd='git log --stat --graph'
 alias status="git status"
 
 alias aliases="grep alias ~/.zshrc"
+
+
+
+####Stuff from react-native / Android Studio
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
